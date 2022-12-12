@@ -17,22 +17,20 @@ function aport() { //[1,2,3]
     fetch(moj_url)
         .then(response => response.json())
         .then(data => {
+            console.log(data);
              while (test.firstChild) {
                  test.removeChild(test.lastChild);
             }
             data.forEach(function (element){
-                const li = document.createElement('li')
-                const h2 = document.createElement('h2')
-                const h3 = document.createElement('h3')
+                const li = document.createElement('li');
+                const h2 = document.createElement('h2');
+                const h3 = document.createElement('h3');
                 h2.innerText = element.name;
                 h3.innerText = element.type;
-                li.appendChild(h2)
-                li.appendChild(h3)
-                test.appendChild(li)
+                li.appendChild(h2);
+                li.appendChild(h3);
+                test.appendChild(li);
             })
-
-
-
         })
 }
 

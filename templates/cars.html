@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Document</title>
+    <title>Strona Sławka</title>
 </head>
 <body>
 <ul>
@@ -21,7 +21,10 @@
     <li>{{ car }}</li>
 {% endfor %}
 </ul>
-
+<ul>
+  <li style="background-color: azure;">To jest <span style="background-color: aqua">pierwszy</span> wiersz</li>
+  <li>To jest <span>drugi</span> wiersz</li>
+</ul>
 <script src="{% static 'app.js' %}"  type="text/javascript"></script>
 </body>
 </html>
